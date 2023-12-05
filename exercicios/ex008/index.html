@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <H1>Imagens dinâmicas</H1>
+    <p>Perceba que essas imagens vão mudar conforme mudamos o tamanho do navegador.</p>
+        <ul>
+            <li>Um "P" amarelo = imagem pequena</li>
+            <li>Um "M" rosa = imagem media</li>
+            <li>Um "G" Verde = imagem grande</li>
+        </ul>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Grande G">
+    </picture>
+    <hr>
+    <p>Essas tags <code>&lt;picture&gt;</code> e <code>&lt;source&gt;</code> servem justamente pra enquadrar as imagens ao tamanho do navegador do usuário que irá acessar o site, seja acessando por computadores, tablets ou celulares. Não utilizar esses recursos significa que um usuário, por exemplo, que usa um celular, sofrerá com rolagem horizontal no navegador, pois estará acessando uma imagem para uma tela bem maior, além de sofrer com lentidão, pois a imagem é desproporcionalmente pesada para o seu dispositivo.</p>
+</body>
+</html>
